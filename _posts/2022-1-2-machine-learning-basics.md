@@ -4,7 +4,6 @@ Let's start with a simple example. Say you're helping a friend who wants to buy 
 It's not easy to tell without a frame of reference. So you ask your friends who have bought houses in that same neighborhoods, and you end up with three data points:
 
 
-
 {::options parse_block_html="true" /}
 <div class="one_variable">
 
