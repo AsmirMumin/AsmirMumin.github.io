@@ -24,11 +24,17 @@ It's not easy to tell without a frame of reference. So you ask your friends who 
 
 Personally, my first instinct would be to get the average price per sq ft. That comes to $180 per sq ft.
 
-Welcome to your first neural network! Now it's not quite at Siri level yet, but now you know the fundamental building block. And it looks like this:
+Welcome to your first neural network! And it looks like this:
 
 
 <div class="img-div" markdown="0">
     <img src="/images/simple_NN_1.png" />
+</div>
+
+Diagrams like this show you the structure of the network and how it calculates a prediction. The calculation starts from the input node at the left. The input value flows to the right. It gets multiplied by the weight and the result becomes our output.
+
+<div class="img-div" markdown="0">
+    <img src="/images/NNs_formula_no_bias.png" />
 </div>
 
 This is a form of prediction. This is a simple predictive model that takes an input, does a calculation, and gives an output (since the output can be of continuous values, the technical name for what we have would be a "regression model")
@@ -43,7 +49,7 @@ Let us visualize this process (for simplicity, let's switch our price unit from 
 
 <p class="gif-space"/>
 
-## Harder, Better, Faster, Stronger
+## Let´s improve this
 
 Can we do better than estimate the price based on the average of our data points? Let's try. Let's first define what it means to be better in this scenario. If we apply our model to the three data points we have, how good of a job would it do?
 
@@ -113,7 +119,7 @@ That's quite a bit of yellow. Yellow is bad. Yellow is error. We want to shrink 
 
 
 Now that we defined our measuring stick for what makes a better model, let's experiment with a couple more weight values and compare them with our average pick:
-
+ 
 
 <p class="gif-space" />
 
@@ -194,8 +200,7 @@ How about you take a crack at training our toy neural network? Minimize the loss
             Weight
         </td>
         <td>
-            <input id="weightSlider" type="range" class="weight" min="0" max="0.4" step="0.001"
-                >
+            <input id="weightSlider" type="range" class="weight" min="0" max="0.4" step="0.001" >
         </td>
         <td class="slider-value">
             <span id="weight" class="weight">0</span>
