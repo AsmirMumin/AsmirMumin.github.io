@@ -2,14 +2,15 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
 
-Some information about you!
+Hello! I'm Asmir and this is my tech [blog](/).
 
-### More Information
+As this is my technical blog, it's probably fitting to point out some aspects of technology that fascinate me:
 
-A place to include any other types of information that you'd like to include about yourself.
+<div dir="rtl" markdown="1">
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[muminovic.asmir1@gmail.com](mailto:muminovic.asmir1@gmail.com)
