@@ -7,6 +7,9 @@
 
 @import "reset";
 @import "variables";
+
+@import "weight_inputrange";
+@import "bias_inputrange";
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -25,7 +28,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 960px;
   padding: 0 10px;
   width: 100%;
 }
