@@ -1,3 +1,9 @@
+---
+layout: prediction_post
+published: True
+title: Interactive Machine Learning Session - Practical House Price Example
+---
+
 ## Interactive Machine Learning Session - Practical House Price Example
 
 Let's start with a simple example. Say you're helping a friend who wants to buy a house. She was quoted $400,000 for a 2000 sq ft house (185 meters). Is this a good price or not?
@@ -164,7 +170,7 @@ So our current model calculates predictions by plugging in the area of house as 
 </div>
 
 
-## Train Your Dragon
+## Try it out!
 How about you take a crack at training our toy neural network? Minimize the loss function by tweaking the weight and bias dials. Can you get an error value below 799?
 
 
