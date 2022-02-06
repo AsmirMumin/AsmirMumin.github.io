@@ -21,14 +21,14 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  color: $gray;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 960px; /* originally 740 */
   padding: 0 10px;
   width: 100%;
 }
@@ -63,8 +63,7 @@ h3 {
 }
 
 h4 {
-  font-size: 18px;
-  color: $gray;
+  color: #CC3333;
 }
 
 p {
@@ -103,6 +102,155 @@ ul ul, ol ul {
 
 em, i {
   font-style: italic;
+}
+
+
+.prediction table{
+  font-size: 80% ;
+  border-collapse: collapse;
+  margin: 40px auto;
+}
+
+.prediction table tr{
+  padding: 1px 30px;
+
+}
+
+.prediction table th{
+  padding: 4px 16px;
+  font-weight: bold;
+}
+
+
+
+.prediction table td{
+  padding: 4px 16px;
+  border-top: 1px solid #333;
+}
+
+td.slider-value{
+  min-width: 100px;
+  font-weight: bold;
+}
+
+td.slider-value #weight {  color: $weightGreen;  }
+td.slider-value #bias {  color: $biasPurple;  }
+
+
+td span#error-value {
+  color: $darkYellow;
+  font-weight: bold;
+}
+
+td.error-cell{  text-align:center;  }
+
+
+.prediction .graphs{
+  width:475px;
+  margin: 0 auto;
+}
+
+.prediction .gd-buttons{
+  text-align: center;
+}
+
+.prediction table.training-table{
+  margin: 0 auto;
+  width: 438px;
+}
+.prediction table.training-table td{
+  border-top:0
+}
+
+#error-value-message{
+  color:$lightBlue;
+  font-weight: bold;
+}
+
+.prediction .training-chart{  text-align:center;  }
+
+.prediction .training-chart svg{  background: #f0f0f0;  }
+.prediction svg .axis line{  stroke:#aaa;  }
+.prediction svg .axis path{  stroke:#aaa;  }
+/*.prediction svg .axis text{  fill:#aaa;  }*/
+
+.prediction #training-one-gd-heatmap svg text.weight-axis-label{
+  font-size: 9pt;
+  fill: $weightGreen;
+}
+
+
+.prediction #training-one-gd-heatmap svg text.bias-axis-label{
+  font-size: 9pt;
+  fill: $biasPurple;
+}
+
+.prediction .mini-charts{
+  width: 438px;
+  margin-left: -7px;
+}
+.prediction .error-chart svg{  background: #f0f0f0;  }
+
+.prediction .error-chart .error-history-line{
+  stroke: $yellow;
+  stroke-width: 2;
+  fill: none;
+}
+
+.prediction .error-chart svg g.axis--x g text{  fill: #bbb;  }
+
+
+.prediction #training-one-gd-heatmap svg g.axis--x g text{  fill: $weightGreen;  }
+.prediction #training-one-gd-heatmap svg g.axis--y g text{  fill: $biasPurple;  }
+
+.prediction .dot{  fill:$lightBlue;  }
+
+.prediction .line{
+  stroke: $pink;
+  stroke-width: 3;
+}
+
+.prediction .error-line{
+  stroke: $yellow;
+  stroke-width: 3;
+}
+
+.prediction .prediction-dot{  fill: $pink;  }
+.prediction .y_{  color: $lightBlue;  }
+.prediction .y {  color: $pink;  }
+.prediction .one_variable td:nth-child(4), td:nth-child(5) {  color: $darkYellow;  }
+.prediction .one_variable td:nth-child(2) {  color: $lightBlue;  }
+.prediction .one_variable td:nth-child(3) {  color: $pink;  }
+.prediction .one_variable td:nth-child(4), td:nth-child(5) {  color: $darkYellow;  }
+
+
+.prediction .two_variables td:nth-child(3) {
+  color: $lightBlue;
+}
+.prediction .two_variables td:nth-child(4) {
+  color: $pink;
+}
+.prediction .two_variables td:nth-child(5), td:nth-child(6) {
+  color: $yellow;
+}
+
+
+
+.prediction .total{
+  color:$gray;
+}
+
+
+.gif_space{
+  margin-top: 80px;
+}
+
+.gif-space-half {
+  margin-top: 40px;
+}
+
+.prediction .viz-line {
+  color: #EC008C;
 }
 
 strong, b {
