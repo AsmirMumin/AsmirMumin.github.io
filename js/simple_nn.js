@@ -846,5 +846,3 @@ var trainer2 = new NN_trainer("#training-one-gd-chart",  "#training-one-gd",
     "#neural-network-gd-graph",
     "Basics of Neural Networks - Viz 2 gradient descent"
 );
-
-
