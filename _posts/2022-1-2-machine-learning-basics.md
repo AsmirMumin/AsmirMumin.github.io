@@ -300,3 +300,11 @@ Congratulations on manually training your first neural network! Let's look at ho
 The two new graphs are to help you track the error values as you fiddle with the parameters (weight and bias) of the model. It's important to keep track of the error as the training process is all about reducing this error as much possible.
 
 How does gradient descent know where its next step should be? Calculus. You see, knowing the function we're minimizing (our loss function, the average of (y_ - y)² for all our data points), and knowing the current inputs into it (the current weight and bias), the derivatives of the loss function tell us which direction to nudge W and b in order to minimize the error.
+
+<script type="text/javascript" src="/js/nnVizUtils.js"></script>
+<!-- Visualizations 1 Weight & bias, and 2 Gradient Descent -->
+<script type="text/javascript" src="/js/simple_nn.js"></script>
+<!-- Visualization 3 - Two variables -->
+<script type="text/javascript" src="/js/two_variable_nn.js"></script>
+<!-- Visualization 4 - Features & classes -->
+<script type="text/javascript" src="/js/shallow_nn_grapher.js"></script>
