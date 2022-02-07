@@ -23,7 +23,7 @@ html {
 body {
   background: $white;
   font: 18px/1.4 $helvetica;
-  color: $gray;
+  color: $darkerGray;
 }
 
 .container {
@@ -112,24 +112,25 @@ em, i {
 }
 
 .prediction table tr{
-  padding: 1px 30px;
+  padding: 1px 10px;
 
 }
 
 .prediction table th{
-  padding: 4px 16px;
+  padding: 4px 5px;
   font-weight: bold;
+  font-size: 80%;
 }
 
 
 
 .prediction table td{
-  padding: 4px 16px;
+  padding: 4px 5px;
   border-top: 1px solid #333;
 }
 
 td.slider-value{
-  min-width: 100px;
+  min-width: 70px;
   font-weight: bold;
 }
 
@@ -140,8 +141,11 @@ td.slider-value .bias {  color: $biasPurple;  opacity: 0.7; }
 .prediction .img-div {
   max-width: 600px;
   margin: auto;
+  font-size: 85%;
+  color: $gray;
 }
 .prediction .img-div img{
+  border: 1px solid $lightGray;
 }
 
 td span#error-value {
@@ -149,12 +153,29 @@ td span#error-value {
   font-weight: bold;
 }
 
+.prediction .error-value{
+  color: $darkYellow;
+}
+
 td.error-cell{  text-align:center;  }
 
 
 .prediction .graphs{
-  width:475px;
+  width:380px;
   margin: 0 auto;
+}
+
+.prediction .container{
+  padding: 0 !important;
+}
+
+.prediction .col-sm-6{
+  padding: 0 !important;
+}
+
+
+.prediction .row {
+  margin: 0 !important;
 }
 
 .prediction .gd-buttons{
@@ -163,7 +184,7 @@ td.error-cell{  text-align:center;  }
 
 .prediction table.training-table{
   margin: 0 auto;
-  width: 438px;
+  width: 380px;
 }
 .prediction table.training-table td{
   border-top:0
@@ -209,10 +230,10 @@ td.error-cell{  text-align:center;  }
 }
 
 .prediction .mini-charts{
-  width: 438px;
-  margin-left: -7px;
+  width: 350px;
+  margin-left: -10px;
 }
-.prediction .error-chart svg{  background: #f0f0f0;  }
+.prediction .error-chart svg{  background: $chartBackground;  }
 
 .prediction .error-chart .error-history-line{
   stroke: $yellow;
@@ -270,6 +291,22 @@ td.error-cell{  text-align:center;  }
 }
 
 
+div.nn-tooltip {
+  position: absolute;
+  text-align: center;
+  /*width: 60px;
+  height: 28px;*/
+  padding: 15px;
+  font: 12px sans-serif;
+  background: white;
+  border: 1px solid #333;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+
+
+
 .gif_space{
   margin-top: 80px;
 }
@@ -290,27 +327,33 @@ td.error-cell{  text-align:center;  }
 .nn-graph-area svg{
   border: 0px solid $gray;
 }
-.inputNode{
+.input-node{
   fill: $nnInputNode;
   stroke: $darkGray;
-  stroke-width: $nnStrokeWidth;
+  stroke-width: $nnNodeStrokeWidth;
 }
 
 .weightNode{
   fill: $nnWeightNode;
   stroke: $darkGray;
-  stroke-width: $nnStrokeWidth;
+  stroke-width: $nnNodeStrokeWidth;
 }
 .biasNode{
   fill: $nnBiasNode;
   stroke: $darkGray;
-  stroke-width: $nnStrokeWidth;
+  stroke-width: $nnNodeStrokeWidth;
 }
 
-.outputNode{
+.softmaxNode{
+  fill: $nnSoftmaxNode;
+  stroke: $darkGray;
+  stroke-width: $nnNodeStrokeWidth;
+}
+
+.output-node{
   fill: $nnOutputNode;
   stroke: $darkGray;
-  stroke-width: $nnStrokeWidth;
+  stroke-width: $nnNodeStrokeWidth;
 }
 .arrow{
   stroke-width:$nnStrokeWidth;
@@ -321,6 +364,68 @@ td.error-cell{  text-align:center;  }
   stroke-width:1;
   stroke-dasharray:0;
 }
+
+
+// Neural Network Grapher
+.grapherWeightNode{
+  fill: $nnWeightNode;
+  stroke: $darkGray;
+  stroke-width: $nnStrokeWidth;
+}
+
+.grapherWeightNodeText{
+  font-size: 9px
+}
+
+.grapher-node-text{
+  font-size: 12px;
+  fill: #666;
+}
+
+// Neural Network Calculation Viz
+#neural-network-calculation-viz{  text-align:center;  }
+
+.nn-node{  fill: white;  stroke-width: $lighterOutlinedNodeStrokeWidth;  }
+.nn-node:hover{ stroke: $lighterGray; }
+.input-group text{   pointer-events: none;  }
+.outlined-input-node{  stroke: $inputOutlineColor;}
+.outlined-weight-node{  stroke: $nnWeightNode; }
+.outlined-bias-node{  stroke: $biasOutlineColor;}
+.outlined-output-node{  stroke: $outputOutlineColor;}
+.outlined-softmax-node{  stroke: $softmaxOutlineColor;}
+
+
+.nn-arrow{
+  stroke-width:$nnStrokeWidth;
+  stroke:$lighterGray;
+}
+
+
+line.nn-arrow-highlighted{
+  stroke: $darkGray !important;
+}
+
+.arrowHead{  stroke:$lighterGray;  }
+
+#neural-network-calculation-viz .weightNodeText{  font-size: 9px; fill: #999;  pointer-events: none;}
+//#neural-network-calculation-viz .weightNodeText:hover{  font-size: 11px; fill: $gray;  pointer-events: none;}
+#neural-network-calculation-viz .node-text{
+  font-size: 14px;
+  fill: #666;
+}
+#neural-network-calculation-viz .outlined-weight-node:hover{
+  stroke: $lighterGray;
+}
+
+#neural-network-calculation-viz  .outlined-weight-node:hover .weightNodeText{
+  font-size: 12px;
+  fill: $gray;
+}
+#neural-network-calculation-viz .weightNodeText{
+
+}
+
+// ============
 
 strong, b {
   font-weight: bold;
