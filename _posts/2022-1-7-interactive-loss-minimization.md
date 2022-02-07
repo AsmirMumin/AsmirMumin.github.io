@@ -9,6 +9,10 @@ title: Interactive Machine Learning Session
     <img src="/images/simple_NN_1.png" />
 </div>
 
+## Motivation
+
+This post contains two interactive graphs to demonstrate what weights and biases are and how their respective errors while modeling training are minimized. 
+
 <!--more-->
 
 ## House Price Example
