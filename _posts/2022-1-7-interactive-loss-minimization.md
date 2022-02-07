@@ -4,6 +4,13 @@ published: True
 title: Interactive Machine Learning Session
 ---
 
+
+<div class="img-div" markdown="0">
+    <img src="/images/simple_NN_1.png" />
+</div>
+
+<!--more-->
+
 ## House Price Example
 
 Let's start with a simple example. Say you're helping a friend who wants to buy a house. She was quoted $400,000 for a 2000 sq ft house (185 meters). Is this a good price or not?

@@ -1,10 +1,16 @@
 ---
 layout: prediction_post
-published: True
-title: Interactive Machine Learning Session - Practical House Price Example
+published: False
+title: Interactive Machine Learning Session
 ---
 
-## Interactive Machine Learning Session - Practical House Price Example
+<div class="img-div" markdown="0">
+    <img src="/images/simple_NN_1.png" />
+</div>
+
+<!--more-->
+
+## House Price Example
 
 Let's start with a simple example. Say you're helping a friend who wants to buy a house. She was quoted $400,000 for a 2000 sq ft house (185 meters). Is this a good price or not?
 
@@ -22,7 +28,7 @@ It's not easy to tell without a frame of reference. So you ask your friends who 
 
 </div>
 
-Personally, my first instinct would be to get the average price per sq ft. That comes to $180 per sq ft.
+Personally, my first instinct would be to get the **average** price per sq ft. That comes to $180 per sq ft.
 
 Welcome to your first neural network! And it looks like this:
 
@@ -176,7 +182,7 @@ So our current model calculates predictions by plugging in the area of house as 
 </div>
 
 
-## Try it out!
+## Playground!
 How about you take a crack at training our toy neural network? Minimize the loss function by tweaking the weight and bias dials. Can you get an error value below 799?
 
 
