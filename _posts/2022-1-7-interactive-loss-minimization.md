@@ -1,7 +1,7 @@
 ---
 layout: prediction_post
 published: True
-title: Interactive Machine Learning Session
+title: Interactive Loss Minimization
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 layout: prediction_post
 published: True
-title: Interactive Machine Learning Session
+title: Interactive Gradient Descent
 ---
 
 
@@ -34,6 +34,50 @@ It's not easy to tell without a frame of reference. So you ask your friends who 
 </div>
 
 
+## Playground!
+How about you take a crack at training our toy neural network? Minimize the loss function by tweaking the weight and bias dials. Can you get an error value below 799?
+
+
+<div id="training-one-chart" class="training-chart"/>
+<table id="training-one" class="training-table">
+    <tr>
+        <td>
+            Error
+        </td>
+        <td colspan="2">
+            <span id="error-value" ></span>
+        </td>
+    </tr>
+    <tr>
+        <td class="error-cell" colspan="3">
+            <span id="error-value-message"></span>&nbsp;
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Weight
+        </td>
+        <td>
+            <input id="weightSlider" type="range" class="weight" min="0" max="0.4" step="0.001" >
+        </td>
+        <td class="slider-value">
+            <span id="weight" class="weight">0</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Bias
+        </td>
+        <td>
+            <input id="biasSlider" type="range" class="bias"  min="0" max="460" step="1" >
+        </td>
+        <td class="slider-value">
+            <span id="bias" class="bias">0</span>
+        </td>
+    </tr>
+</table>
+
+<div id="neural-network-graph" class="nn-graph-area" ></div>
 
 
 ## Automation
