@@ -11,7 +11,7 @@ title: Interactive Machine Learning Session
 
 ## Motivation
 
-This post contains two interactive graphs to demonstrate what weights and biases are and how their respective errors while modeling training are minimized. 
+This post contains an interactive graphs to demonstrate what weights and biases are and how their respective errors while model training are minimized. 
 
 <!--more-->
 
@@ -81,79 +81,6 @@ How about you take a crack at training our toy neural network? Minimize the loss
 
 
 
-
-## Automation
-Congratulations on manually training your first neural network! Let's look at how to automate this training process. Below is another example with an additional autopilot-like functionality. These are the GD Step buttons. They use an algorithm called "Gradient Descent" to try to step towards the correct weight and bias values that minimize the loss function.
-
-
-<div class="container"  markdown="0">
-    <div class="row">
-
-        <div class="col-sm-6 graphs">
-            <div id="training-one-gd-chart" class="training-chart" ></div>
-
-
-                <div class="row training-chart mini-charts">
-                    <div id="training-one-gd-error-chart" class="error-chart col-xs-6" ></div>
-                    <div id="training-one-gd-heatmap" class="error-chart col-xs-6" ></div>
-                </div>
-
-        </div>
-
-        <div class="col-sm-6">
-
-            <table id="training-one-gd" class="training-table">
-                <tr>
-                    <td colspan="3" class="gd-buttons">
-                        <input type="button" value="GD Step" id="gradient-descent-button"  class="btn btn-primary" />
-                        <input type="button" value="10 GD Steps " id="gradient-descent-10-button"  class="btn btn-primary" />
-                        <input type="button" value="100 GD Steps " id="gradient-descent-100-button"  class="btn btn-primary" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Error
-                    </td>
-                    <td colspan="2">
-                        <span id="error-value" ></span>
-                    </td>
-
-                </tr>
-
-                <tr>
-                    <td class="error-cell" colspan="3">
-                        <span id="error-value-message"></span>&nbsp;
-                    </td>
-
-                </tr>
-                <tr>
-                    <td>
-                        Weight
-                    </td>
-                    <td>
-                        <input id="weightSlider" type="range" class="weight" min="0" max="0.4" step="0.0001">
-                    </td>
-                    <td class="slider-value">
-                        <span id="weight" class="weight">0</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Bias
-                    </td>
-                    <td>
-                        <input id="biasSlider" type="range"  class="bias" min="0" max="460" step="0.1">
-                    </td>
-                    <td class="slider-value">
-                        <span id="bias" class="bias">0</span>
-                    </td>
-                </tr>
-            </table>
-
-            <div id="neural-network-gd-graph" class="nn-graph-area" ></div>
-        </div>
-    </div>
-</div>
 
 <script type="text/javascript" src="/js/nnVizUtils.js"></script>
 <!-- Visualizations 1 Weight & bias, and 2 Gradient Descent -->
