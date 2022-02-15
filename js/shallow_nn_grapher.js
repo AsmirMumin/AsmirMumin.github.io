@@ -1,5 +1,5 @@
 /**
- * Created by alammar on 12/8/16.
+ *  12/8/16.
  */
 var shallowNeuralNetworkGrapher = function (inputNodeCount, outputNodeCount, svgElement, analyticsCategory) {
     this.inputNodeCount = inputNodeCount;

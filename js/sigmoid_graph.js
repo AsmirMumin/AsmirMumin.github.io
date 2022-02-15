@@ -1,5 +1,5 @@
 /**
- * Created by alammar on 2/3/17.
+ *  2/3/17.
  */
 
 var sigmoidGraph = function (containerElement, xStart, xEnd, xDefault, sliderElement, sigmoidInputElement,
